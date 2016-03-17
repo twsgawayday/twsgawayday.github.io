@@ -1,2 +1,1 @@
-# twsgawayday.github.io
-SG Away Day Website
+# SG Away Day Website
