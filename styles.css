@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    text-align: center;
+    margin: 50px 15px;
+}
+
+.content__top {
+    text-transform: uppercase;
+}
+
+.header__container {
+    border-bottom: 1px solid #CCCCCC;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.header__tw {    
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.header__away-day {
+    font-weight: 800;
+    font-size: 58px;
+    margin: 15px 0;
+    line-height: 100%;
+}
+
+.details__container {
+    margin-bottom: 30px;
+}
+
+.details__text--bold {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 180%;
+}
+
+.details__text--italic {
+    font-style: italic;
+    letter-spacing: 5px;
+    color: #BBBBBB;
+}
+
+.tagline__container {
+    font-size: 35px;
+    font-style: italic;
+    letter-spacing: 9px;
+    margin-bottom: 50px;
+}
+
+.tagline__image img {
+    max-width: 100%;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.button {
+    padding: 15px 20px;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #0000CD;
+    margin-right: 20px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.button.-last {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .button {
+       display: block;
+       margin-right: 0;
+    }
+}
