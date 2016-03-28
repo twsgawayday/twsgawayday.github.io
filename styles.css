@@ -60,7 +60,7 @@ body {
 .header__tw {    
     font-size: 1.8em;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 3px;
     line-height: 130%;
 }
@@ -99,7 +99,7 @@ body {
     letter-spacing: 1px;
     font-size: 1em;
     display: inline-block;
-    font-weight: 200;
+    font-weight: 100;
     font-style: italic;
     width: 130px;
     margin-right: 10px;
