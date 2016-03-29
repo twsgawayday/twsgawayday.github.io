@@ -1,3 +1,5 @@
+@import url("open-sans.css");
+
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -14,13 +16,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-color: #1ED2E2;
-    padding: 50px;
+    padding: 80px;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
 }
 
-.theme__shiok {
+.theme__damn-shiok {
     font-size: 7.5em;
     line-height: 88%;
     margin-left: auto;
@@ -28,9 +30,13 @@ body {
     font-weight: 800;
 }
 
+.theme__damn {
+    font-size: 8.2rem;
+}
+
 .theme__tagline {
-    font-size: 1.4em;
-    margin-top: 20px;
+    font-size: 1.5em;
+    margin-top: 25px;
     line-height: 1em;
     font-weight: 100;
     font-style: italic;
