@@ -10,7 +10,7 @@ body {
 }
 
 .theme__container {
-/*    background: url(colors.gif); no-repeat center center fixed; 
+/*    background: url(colors.gif); no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,7 +100,7 @@ body {
     margin-bottom: 15px;
 }
 
-.header__tw {    
+.header__tw {
     font-size: 1.8em;
     font-style: italic;
     font-weight: 100;
