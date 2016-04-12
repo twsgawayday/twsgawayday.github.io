@@ -163,13 +163,17 @@ body {
         padding: 40px 20px;
     }
 
-    .theme__shiok {
-        font-size: 6.5em;
+    .theme__damn-shiok {
+        font-size: 6.4em;
+    }
+
+    .theme__damn {
+        font-size: 7rem;
     }
 
     .theme__tagline {
-        font-size: 1.6em;
-        margin: 10px 0;
+        font-size: 1.4em;
+        letter-spacing: 5px;
     }
 
     .content {
