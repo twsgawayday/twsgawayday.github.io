@@ -152,6 +152,35 @@ body {
     margin-right: 0;
 }
 
+.attendee-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.attendee {
+  box-sizing: border-box;
+  width: 200px;
+  margin: 20px;
+}
+
+.attendee-photo {
+  width: 100%;
+  object-fit: contain;
+}
+
+.attendee-quote {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.attendee-quote:before {
+  content: open-quote;
+}
+.attendee-quote:after {
+  content: close-quote;
+}
+
 /*Small screen styles*/
 
 @media screen and (max-width: 600px) {

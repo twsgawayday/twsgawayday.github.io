@@ -1,6 +1,7 @@
 let attendees = require('../data/attendees.json')
 
-const container = document.querySelector('.content')
+const attendeeList = document.createElement('div')
+attendeeList.className = 'attendee-list'
 
 attendees.forEach(attendee => {
   const attendeeDiv = document.createElement('div')
@@ -27,5 +28,7 @@ attendees.forEach(attendee => {
   attendeeDiv.appendChild(name)
   attendeeDiv.appendChild(homeOffice)
 
-  container.appendChild(attendeeDiv)
+  attendeeList.appendChild(attendeeDiv)
 })
+
+document.querySelector('.content').appendChild(attendeeList)
