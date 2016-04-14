@@ -159,6 +159,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .attendee {
   box-sizing: border-box;
   width: 200px;
@@ -170,15 +171,24 @@ body {
   object-fit: contain;
 }
 
+.attendee-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 .attendee-quote {
   font-size: 1.4rem;
-  font-style: italic;
+  font-weight: normal;
 }
 .attendee-quote:before {
   content: open-quote;
 }
 .attendee-quote:after {
   content: close-quote;
+}
+
+.attendee-home-office {
+  font-style: italic;
 }
 
 /*Small screen styles*/
