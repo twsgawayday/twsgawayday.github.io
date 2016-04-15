@@ -19,11 +19,14 @@ attendees.forEach(attendee => {
   photo.className = 'attendee-photo'
   photo.setAttribute('src', attendee.photoURL)
 
-  const quote = document.createElement('h1')
-  quote.className = 'attendee-quote'
-  quote.textContent = attendee.quote
 
-  attendeeDiv.appendChild(quote)
+  if (attendee.quote !== "") {
+    const quote = document.createElement('h1')
+    quote.className = 'attendee-quote'
+    quote.textContent = attendee.quote
+    attendeeDiv.appendChild(quote)
+  }
+
   attendeeDiv.appendChild(photo)
   attendeeDiv.appendChild(name)
   attendeeDiv.appendChild(homeOffice)
@@ -31,4 +34,4 @@ attendees.forEach(attendee => {
   attendeeList.appendChild(attendeeDiv)
 })
 
-document.querySelector('.content').appendChild(attendeeList)
+document.querySelector('.photobook').appendChild(attendeeList)
