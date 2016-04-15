@@ -174,10 +174,11 @@ body {
 .attendee-name {
   font-size: 1.1rem;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .attendee-quote {
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   font-weight: normal;
 }
 .attendee-quote:before {
@@ -188,6 +189,7 @@ body {
 }
 
 .attendee-home-office {
+  margin-top: 0;
   font-style: italic;
 }
 
