@@ -157,7 +157,7 @@ body {
   margin: 50px auto 0;
 }
 
-.photobook h2 {
+.photobook-header {
   margin-top: 100px;
   text-transform: uppercase;
 }
