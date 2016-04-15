@@ -38,6 +38,6 @@ attendees.forEach(function (attendee) {
   attendeeList.appendChild(attendeeDiv);
 });
 
-document.querySelector('.content').appendChild(attendeeList);
+document.querySelector('.photobook').appendChild(attendeeList);
 
 },{"../data/attendees.json":1}]},{},[2]);
