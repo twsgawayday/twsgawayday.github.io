@@ -24,11 +24,13 @@ attendees.forEach(function (attendee) {
   photo.className = 'attendee-photo';
   photo.setAttribute('src', attendee.photoURL);
 
-  var quote = document.createElement('h1');
-  quote.className = 'attendee-quote';
-  quote.textContent = attendee.quote;
+  if (attendee.quote !== "") {
+    var quote = document.createElement('h1');
+    quote.className = 'attendee-quote';
+    quote.textContent = attendee.quote;
+    attendeeDiv.appendChild(quote);
+  }
 
-  attendeeDiv.appendChild(quote);
   attendeeDiv.appendChild(photo);
   attendeeDiv.appendChild(name);
   attendeeDiv.appendChild(homeOffice);
