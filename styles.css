@@ -170,23 +170,24 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .attendee {
   box-sizing: border-box;
-  width: 200px;
+  width: 220px;
   margin: 20px;
 }
 
 .attendee-photo {
   width: 100%;
-  object-fit: contain;
+  height: 220px;
+  object-fit: cover;
 }
 
 .attendee-name {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -194,12 +195,6 @@ body {
 .attendee-quote {
   font-size: 1.0rem;
   font-weight: normal;
-}
-.attendee-quote:before {
-  content: open-quote;
-}
-.attendee-quote:after {
-  content: close-quote;
 }
 
 .attendee-home-office {
