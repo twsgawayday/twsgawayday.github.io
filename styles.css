@@ -239,6 +239,10 @@ body {
         padding: 25px 0;
     }
 
+    .buttons__container {
+        padding-bottom: 40px;
+    }
+
     .button {
         padding: 15px;
         display: block;
@@ -246,4 +250,17 @@ body {
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    .photobook {
+      max-width: 100%;
+      margin: 50px auto 0;
+    }
+
+    .photobook-header {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .attendee {
+      margin: 5px;
 }
