@@ -8,7 +8,19 @@ var attendees = require('../data/attendees.json');
 var attendeeList = document.createElement('div');
 attendeeList.className = 'attendee-list';
 
-attendees.forEach(function (attendee) {
+attendees.map(function (attendee) {
+  switch (attendee.name) {
+    case 'Kevin Yeung':
+    case 'Mahadeo Naig':
+    case 'Riju Kansal':
+    case 'Shion Wah':
+    case 'Wen Shun Wong':
+      var newPhotoURL = '/img/' + attendee.name + '.jpg';
+      return Object.assign({}, attendee, { photoURL: newPhotoURL });
+    default:
+      return attendee;
+  }
+}).forEach(function (attendee) {
   var attendeeDiv = document.createElement('div');
   attendeeDiv.className = 'attendee';
 
@@ -39,5 +51,18 @@ attendees.forEach(function (attendee) {
 });
 
 document.querySelector('.photobook').appendChild(attendeeList);
+
+function replaceDefaultPhoto(name) {
+  switch (name) {
+    case 'Kevin Yeung':
+    case 'Mahadeo Naig':
+    case 'Riju Kansal':
+    case 'Shion Wah':
+    case 'Wen Shun Wong':
+      return photoURL = '/img/' + name + '.jpg';
+    default:
+      break;
+  }
+}
 
 },{"../data/attendees.json":1}]},{},[2]);

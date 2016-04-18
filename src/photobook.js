@@ -3,7 +3,19 @@ let attendees = require('../data/attendees.json')
 const attendeeList = document.createElement('div')
 attendeeList.className = 'attendee-list'
 
-attendees.forEach(attendee => {
+attendees.map(attendee => {
+  switch (attendee.name) {
+    case 'Kevin Yeung':
+    case 'Mahadeo Naig':
+    case 'Riju Kansal':
+    case 'Shion Wah':
+    case 'Wen Shun Wong':
+      const newPhotoURL = '/img/' + attendee.name + '.jpg'
+      return Object.assign({}, attendee, { photoURL: newPhotoURL })
+    default:
+      return attendee;
+  }
+}).forEach(attendee => {
   const attendeeDiv = document.createElement('div')
   attendeeDiv.className = 'attendee'
 
@@ -35,3 +47,16 @@ attendees.forEach(attendee => {
 })
 
 document.querySelector('.photobook').appendChild(attendeeList)
+
+function replaceDefaultPhoto(name) {
+  switch (name) {
+    case 'Kevin Yeung':
+    case 'Mahadeo Naig':
+    case 'Riju Kansal':
+    case 'Shion Wah':
+    case 'Wen Shun Wong':
+      return photoURL = '/img/' + name + '.jpg'
+    default:
+      break;
+  }
+}
