@@ -120,6 +120,10 @@ body {
     margin-right: auto;
 }
 
+.buttons__container {
+    padding-bottom: 70px;
+}
+
 .details__text--bold {
     font-size: 1.5em;
     font-weight: 800;
@@ -154,12 +158,12 @@ body {
 
 .photobook {
   max-width: 80%;
-  margin: 50px auto 0;
+  margin: 70px auto 0;
 }
 
 .photobook-header {
-  margin-top: 100px;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .attendee-list {
