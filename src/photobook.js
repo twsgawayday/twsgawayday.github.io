@@ -47,16 +47,3 @@ attendees.map(attendee => {
 })
 
 document.querySelector('.photobook').appendChild(attendeeList)
-
-function replaceDefaultPhoto(name) {
-  switch (name) {
-    case 'Kevin Yeung':
-    case 'Mahadeo Naig':
-    case 'Riju Kansal':
-    case 'Shion Wah':
-    case 'Wen Shun Wong':
-      return photoURL = '/img/' + name + '.jpg'
-    default:
-      break;
-  }
-}
