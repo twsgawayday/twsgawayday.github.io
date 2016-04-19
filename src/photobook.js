@@ -47,3 +47,9 @@ attendees.map(attendee => {
 })
 
 document.querySelector('.photobook').appendChild(attendeeList)
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./service-worker.js')
+    .then(() => console.log('Service Worker Registered'))
+}

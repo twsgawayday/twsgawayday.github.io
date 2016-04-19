@@ -52,4 +52,10 @@ attendees.map(function (attendee) {
 
 document.querySelector('.photobook').appendChild(attendeeList);
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js').then(function () {
+    return console.log('Service Worker Registered');
+  });
+}
+
 },{"../data/attendees.json":1}]},{},[2]);
