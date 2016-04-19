@@ -197,6 +197,7 @@ body {
 .attendee-quote {
   font-size: 1.0rem;
   font-weight: normal;
+  word-wrap: break-word;
 }
 
 .attendee-home-office {
