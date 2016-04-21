@@ -121,6 +121,7 @@ body {
 }
 
 .buttons__container {
+    margin-top: 70px;
     padding-bottom: 70px;
 }
 
@@ -151,9 +152,20 @@ body {
     width: 130px;
     margin-right: 10px;
 }
-
 .button.-last {
     margin-right: 0;
+}
+
+.newsletter-list {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newsletter {
+  margin: 5px;
 }
 
 .photobook {
@@ -238,11 +250,12 @@ body {
     }
 
     .details__container {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         padding: 25px 0;
     }
 
     .buttons__container {
+        margin-top: 40px;
         padding-bottom: 40px;
     }
 
