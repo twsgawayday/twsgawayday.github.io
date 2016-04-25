@@ -19,7 +19,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-data && browserify src/photobook.js -o bundle.js -t babelify",
-    "build-data": "babel-node scripts/buildAttendeeList.js"
+    "build-data": "babel-node scripts/buildAttendeeList.js",
+    "watch": "watchify src/photobook.js -o bundle.js -t babelify"
   },
   "repository": {
     "type": "git",
