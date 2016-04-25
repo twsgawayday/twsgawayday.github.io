@@ -15,7 +15,9 @@ attendees.map(attendee => {
     default:
       return attendee;
   }
-}).forEach(attendee => {
+})
+.sort((attendee1, attendee2) => attendee2.quote.length - attendee1.quote.length)
+.forEach(attendee => {
   const attendeeDiv = document.createElement('div')
   attendeeDiv.className = 'attendee'
 
