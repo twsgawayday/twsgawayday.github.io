@@ -10,6 +10,13 @@ attendeeList.className = 'attendee-list';
 
 attendees.map(function (attendee) {
   switch (attendee.name) {
+    case 'Prasanna Kanagasabai':
+    case 'Sri Harsha K.M.':
+    case 'Stephanie Siaw':
+    case 'Nikhita Elizabeth Cyriac':
+    case 'Guo Qiang Gordon Song':
+    case 'Michael Wongwaisayawan':
+    case 'Jean Zheng':
     case 'Kevin Yeung':
     case 'Mahadeo Naig':
     case 'Riju Kansal':
