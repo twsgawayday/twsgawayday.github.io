@@ -5,10 +5,17 @@ attendeeList.className = 'attendee-list'
 
 attendees.map(attendee => {
   switch (attendee.name) {
+    case 'Xiao Guo':
+    case 'Prasanna Kanagasabai':
+    case 'Sri Harsha K.M.':
+    case 'Stephanie Siaw':
+    case 'Nikhita Elizabeth Cyriac':
+    case 'Guo Qiang Gordon Song':
+    case 'Michael Wongwaisayawan':
+    case 'Jean Zheng':
     case 'Kevin Yeung':
     case 'Mahadeo Naig':
     case 'Riju Kansal':
-    case 'Shion Wah':
     case 'Wen Shun Wong':
       const newPhotoURL = '/img/' + attendee.name + '.jpg'
       return Object.assign({}, attendee, { photoURL: newPhotoURL })
