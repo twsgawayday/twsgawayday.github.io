@@ -10,6 +10,7 @@ attendeeList.className = 'attendee-list';
 
 attendees.map(function (attendee) {
   switch (attendee.name) {
+    case 'Xiao Guo':
     case 'Prasanna Kanagasabai':
     case 'Sri Harsha K.M.':
     case 'Stephanie Siaw':
