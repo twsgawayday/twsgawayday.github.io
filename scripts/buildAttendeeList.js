@@ -21,7 +21,7 @@ fs.createReadStream('./data/raw.csv').pipe(converter)
 
 async function buildAttendeeProfile (person) {
   const username = person.Username.split('@')[0]
-  const quote = person['What does \'Damn Shiok\' mean to you?'];
+  const quote = person['What does \'Damn Shiok\' mean to you?'].replace(/^"$/, '');
 
   const apiURL = 'https://jigsaw.thoughtworks.com/api/people/' + username
   const options = {
