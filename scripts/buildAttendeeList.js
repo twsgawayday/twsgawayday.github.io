@@ -3,6 +3,33 @@ import fetch from 'node-fetch'
 import { Converter } from 'csvtojson'
 require('dotenv').config()
 
+const additionalPeople = [
+  {
+    name: 'Steven Ta',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: 'Chicken Patties with Mac Sauce'
+  },
+  {
+    name: 'Wee Feng Sheng, Tobie',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: 'That feeling when I accomplish something, or when I have a good meal with my loved ones.'
+  },
+  {
+    name: 'Wenshu kwek',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: 'A tasty bag of kopi peng!'
+  },
+  {
+    name: 'Ekta Sivasriamphai',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: ''
+  },
+];
+
 const converter = new Converter({})
 
 converter.on('end_parsed', jsonArray => {
@@ -10,13 +37,9 @@ converter.on('end_parsed', jsonArray => {
 
   Promise.all(attendees.map(attendee => buildAttendeeProfile(attendee)))
     .then(data => {
-      fs.writeFile('./data/attendees.json', JSON.stringify(data), 'utf8', (err) => {
+      fs.writeFile('./data/attendees.json', JSON.stringify(data.concat(additionalPeople)), 'utf8', (err) => {
         if (err) throw err
         console.log('success');
-      });
-      fs.appendFile('./data/attendees.json', JSON.stringify(additionalPeople), (err) => {
-          if (err) throw err;
-          console.log('Appended additional people!');
       });
     })
 })
@@ -47,29 +70,4 @@ async function buildAttendeeProfile (person) {
 
 }
 
-const additionalPeople = [
-  {
-    name: 'Steven Ta',
-    photoURL: '',
-    homeOffice: 'Singapore',
-    quote: 'Chicken Patties with Mac Sauce'
-  },
-  {
-    name: 'Wee Feng Sheng, Tobie',
-    photoURL: '',
-    homeOffice: 'Singapore',
-    quote: 'That feeling when I accomplish something, or when I have a good meal with my loved ones.'
-  },
-  {
-    name: 'Wenshu kwek',
-    photoURL: '',
-    homeOffice: 'Singapore',
-    quote: 'A tasty bag of kopi peng!'
-  },
-  {
-    name: 'Ekta Sivasriamphai',
-    photoURL: '',
-    homeOffice: 'Singapore',
-    quote: ''
-  },
-];
+
