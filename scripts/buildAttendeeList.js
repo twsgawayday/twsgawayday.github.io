@@ -13,7 +13,11 @@ converter.on('end_parsed', jsonArray => {
       fs.writeFile('./data/attendees.json', JSON.stringify(data), 'utf8', (err) => {
         if (err) throw err
         console.log('success');
-      })
+      });
+      fs.appendFile('./data/attendees.json', JSON.stringify(additionalPeople), (err) => {
+          if (err) throw err;
+          console.log('Appended additional people!');
+      });
     })
 })
 
@@ -42,3 +46,30 @@ async function buildAttendeeProfile (person) {
     })
 
 }
+
+const additionalPeople = [
+  {
+    name: 'Steven Ta',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: 'Chicken Patties with Mac Sauce'
+  },
+  {
+    name: 'Wee Feng Sheng, Tobie',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: 'That feeling when I accomplish something, or when I have a good meal with my loved ones.'
+  },
+  {
+    name: 'Wenshu kwek',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: 'A tasty bag of kopi peng!'
+  },
+  {
+    name: 'Ekta Sivasriamphai',
+    photoURL: '',
+    homeOffice: 'Singapore',
+    quote: ''
+  },
+];
