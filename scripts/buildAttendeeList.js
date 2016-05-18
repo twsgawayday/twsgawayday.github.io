@@ -17,7 +17,7 @@ const additionalPeople = [
     quote: 'Chicken Patties with Mac Sauce'
   },
   {
-    name: 'Wee Feng Sheng, Tobie',
+    name: 'Tobie Wee',
     photoURL: '',
     homeOffice: 'Singapore',
     quote: 'That feeling when I accomplish something, or when I have a good meal with my loved ones.'
