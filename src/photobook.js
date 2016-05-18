@@ -11,7 +11,6 @@ attendees.map(attendee => {
     case 'Wenshu kwek':
     case 'Daniel Lee':
     case 'KengFei Lee':
-    case 'Xiao Guo':
     case 'Prasanna Kanagasabai':
     case 'Sri Harsha K.M.':
     case 'Stephanie Siaw':
