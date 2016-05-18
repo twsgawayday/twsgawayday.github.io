@@ -26,6 +26,9 @@ attendees.map(attendee => {
     case 'Wen Shun Wong':
       const newPhotoURL = '/img/' + attendee.name + '.jpg'
       return Object.assign({}, attendee, { photoURL: newPhotoURL })
+    case 'Rosario Arena':
+      const newQuote = 'Riding a 🐎 in my farm'
+      return Object.assign({}, attendee, { quote: newQuote })
     default:
       return attendee;
   }
