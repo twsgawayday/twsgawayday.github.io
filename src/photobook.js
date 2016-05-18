@@ -9,7 +9,7 @@ attendees.map(attendee => {
     case 'Gabriel Gavasso':
     case 'Ekta Sivasriamphai':
     case 'Steven Ta':
-    case 'Wee Feng Sheng, Tobie':
+    case 'Tobie Wee':
     case 'Wenshu kwek':
     case 'Daniel Lee':
     case 'KengFei Lee':
