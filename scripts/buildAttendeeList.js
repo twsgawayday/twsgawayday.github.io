@@ -11,6 +11,12 @@ const additionalPeople = [
     quote: 'I looked it up since I was curious, I believe its "very fantastic", didn\'t it had a Punjabi etymology :)'
   },
   {
+    name: 'Vishal Sharma',
+    photoURL: '',
+    homeOffice: 'Gurgaon',
+    quote: 'RoCkINg'
+  },
+  {
     name: 'Steven Ta',
     photoURL: '',
     homeOffice: 'Singapore',
