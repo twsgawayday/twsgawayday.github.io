@@ -5,6 +5,12 @@ require('dotenv').config()
 
 const additionalPeople = [
   {
+    name: 'Pamela Stone',
+    photoURL: '',
+    homeOffice: 'Melbourne',
+    quote: 'deliciously disrupting Singapore, lah'
+  },
+  {
     name: 'Ng Pan-Wei',
     photoURL: '',
     homeOffice: 'Beijing',
