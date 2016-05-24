@@ -5,6 +5,7 @@ attendeeList.className = 'attendee-list'
 
 attendees.map(attendee => {
   switch (attendee.name) {
+    case 'Diana Garcia':
     case 'Pamela Stone':
     case 'Ng Pan-Wei':
     case 'Marzena Sokolowska':
