@@ -5,6 +5,12 @@ require('dotenv').config()
 
 const additionalPeople = [
   {
+    name: 'Ng Pan-Wei',
+    photoURL: '',
+    homeOffice: 'Beijing',
+    quote: 'LAGI BAGUS'
+  },
+  {
     name: 'Channappa Jagadish',
     photoURL: 'https://jigsaw.thoughtworks.com/consultants/26763/show_picture?style=profile',
     homeOffice: 'Bangalore',
